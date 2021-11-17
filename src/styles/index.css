@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+    width: 894px;
+    height: 93px;
+
+    background: #f00;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li + li {
+    margin-top: 10px;
+}
+
+li .leftSide {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    background: #dedede;
+    width: 100vw;
+    height: 100vh;
+}
+
+.head {
+    background: #fff;
+    height: 55px;
+    
+    display: flex;
+    align-items: center;
+}
+.head img {
+    width: 145.81px;
+    margin-left: 41px;
+}
+.principal {
+    display: flex;
+    max-width: calc(100vw - 138px);
+    margin: auto;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details .propertyInside {
+    display: flex;
+    flex-direction: row;
+}
+
+.firstPage {
+    width: 894px;
+    height: 622px;
+    background: #ece;
+    color: #00f;
+}
+
+.card {
+    width: 279px;
+    height: 309px;
+    background: #cee;
+}
+.cardManage {
+    width: 279px;
+    height: 333px;
+    background: #ecc;
+}
