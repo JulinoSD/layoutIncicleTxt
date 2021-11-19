@@ -2,30 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-li {
-    list-style: none;
-    width: 894px;
-    height: 93px;
-
-    background: #f00;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-li + li {
-    margin-top: 10px;
-}
-
-li .leftSide {
-    display: flex;
-    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
 }
 
 body {
-    background: #dedede;
+    background: #F2F3F5;
     width: 100vw;
     height: 100vh;
 }
@@ -47,21 +29,73 @@ body {
     margin: auto;
 }
 
+.firstPage {
+    width: 894px;
+    height: 622px;
+    color: #00f;
+}
+
 .details {
     display: flex;
     justify-content: space-between;
 }
 
+.details .endomarketing {
+    font: 300 35px 'open sans', sans-serif;
+}
+
 .details .propertyInside {
+    display: block;
+    
+}
+details > summary {
+    width: 95px;
+    height: 38px;
+    border: 1px #000 solid;
+    border-radius: 4px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonDetail {
+    width: 103px;
+    height: 38px;
+
+    border-radius: 4px;
+    border: none;
+    background: #3489B1;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+
+li {
+    background: #fff;
+    list-style: none;
+    width: 894px;
+    height: 93px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li + li {
+    margin-top: 10px;
+}
+
+li .leftSide {
     display: flex;
     flex-direction: row;
 }
 
-.firstPage {
-    width: 894px;
-    height: 622px;
-    background: #ece;
-    color: #00f;
+li .leftSide img {
+    width: 73px;
+    height: 73px;
 }
 
 .card {
@@ -72,5 +106,6 @@ body {
 .cardManage {
     width: 279px;
     height: 333px;
-    background: #ecc;
+    background: #fdfdfd;
+    border-radius: 5px;
 }
