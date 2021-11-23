@@ -5,63 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/teste.css">
     <style>
-        .leftSide {
-            display: grid;
-            grid-template-columns: 76px 1fr 16px;
-            grid-template-rows: 1fr 1fr 1fr;
-            background: red;
-
-        }
-        .imag {
-            width: 73px;
-            height: 73px;
-
-            grid-column: 1;
-            grid-row: 1 / span 3;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: cornsilk;
-        }
         
-        .Smalltext {
+        /* .list {
             display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
 
-            background: cyan;
-        }
-
-        .longtext {
-            font: 300 13px/100% 'open sans', sans-serif;
-            color: #707070;
-        }
-        .button {
-            grid-column: 3;
-            grid-row: 1 / span 3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .roundedbutton {
-            border: none;
-            border-radius: 50%;
-        }
+            width: 894px;
+            height: 36px;
+        } */
+        
     </style>
     <title>Document</title>
 </head>
 
 <body>
-    <li class="leftSide">
-        <span>
-            <img src="../../public/img_act/1_COMUNICADO.png" alt="Comunicado" srcset="" class="imag">
-            <span>
-                <p>Geral dispensado para curtir o feriado</p>
-                <span class="Smalltext">
-                    <p>Primeiro texto</p>
-                    <p>Segundo texto</p>
+    <li class="list">
+        <span class="leftProperty">
+            <img src="../../public/img_act/1_COMUNICADO.png" alt="Comunicado" srcset="">
+            <span class="text">
+                <h1 class="title">Geral dispensado para curtir o feriado</h1>
+                <span class="Smalltext comunicado">
+                    <p>Comunicado</p>
+                    <p>13 de out</p>
                 </span>
                 <p class="longtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sunt eum
                     reiciendis ratione quos voluptatem explicabo autem, inventore alias, eius pariatur

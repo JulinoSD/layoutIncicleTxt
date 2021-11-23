@@ -18,6 +18,8 @@ body {
     
     display: flex;
     align-items: center;
+
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .head img {
     width: 145.81px;
@@ -32,32 +34,32 @@ body {
 .firstPage {
     width: 894px;
     height: 622px;
-    color: #00f;
 }
 
-.details {
+.endomarketing {
+    margin: 30px auto 8px;
     display: flex;
     justify-content: space-between;
 }
 
-.details .endomarketing {
+.endomarketing .letter {
     font: 300 35px 'open sans', sans-serif;
 }
 
-.details .propertyInside {
-    display: block;
-    
-}
-details > summary {
-    width: 95px;
-    height: 38px;
-    border: 1px #000 solid;
-    border-radius: 4px;
-    
+.propertyInside {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    width: 208px;
+    
+}
+
+select {
+    width: 95px;
+    height: 38px;
+    border-radius: 4px;
+    text-transform: uppercase;
 }
 
 .buttonDetail {
@@ -70,6 +72,10 @@ details > summary {
     color: #fff;
     font-weight: 700;
 
+}
+
+.buttonDetail, select {
+    cursor: pointer;
 }
 
 
@@ -101,11 +107,130 @@ li .leftSide img {
 .card {
     width: 279px;
     height: 309px;
-    background: #cee;
+    margin: 35px auto 17px 31px;
+    background-color: #FFF2DE;
+    border: 1px solid #DCD1C0;
+    padding: 28px 21px;
+}
+.card p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card button {
+    width: 113px;
+    height: 38px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font: 700 13px 'open sans', sans-serif;
+    background: none;
+    margin-top: 16px;
+    margin-bottom: 30px;
 }
 .cardManage {
     width: 279px;
     height: 333px;
-    background: #fdfdfd;
+    margin: 17px auto 19px 31px;
+    background: #fff;
     border-radius: 5px;
+    padding: 10px 8px;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.demo {
+    width: 262.08px;
+    height: 86.39px;
+    background: rgba(52, 137, 177, 0.1);
+}
+.demo + .demo {
+    margin-top: 6.4px;
+}
+
+.list + .list {
+    margin-top: 10px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 700px 70px;
+    margin: auto;
+    justify-content: space-between;
+
+    max-width: 894px;
+    height: 93px;
+
+    background: #fff;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+
+    color: #707070;
+}
+.leftProperty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.leftProperty img {
+    width: 73px;
+    height: 73px;
+    margin: 0 10px;
+}
+.title {
+    font: 700 16px/100% 'open sans', sans-serif;
+}
+.Smalltext {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font: 300 9px/100% 'open sans', sans-serif;
+    margin: 3px 0 4px 0;
+    border-right: 1px solid #707070;
+    width: 102px;
+}
+
+.comunicado p:first-child {
+    background: #3489B1;
+    font: 700 6px 'open sans', sans-serif;
+    color: #fff;
+    padding: 2px;
+    margin-right: 5px;
+}
+.publication p:first-child {
+    background: #707070;
+    font: 700 6px 'open sans', sans-serif;
+    color: #fff;
+    padding: 2px;
+    margin-right: 5px;
+}
+.event p:first-child {
+    background: #EE8686;
+    font: 700 6px 'open sans', sans-serif;
+    color: #000;
+    padding: 2px;
+    margin-right: 5px;
+}
+.longtext {
+    font: 300 13px/100% 'open sans', sans-serif;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: clip ellipsis;
+    text-overflow: "..." "...";
+    line-height: 1.5;
+    height: 40px;
+
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button .roundedbutton {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+
+    text-align: center;
+    border: none;
+    border-radius: 25px;
 }
