@@ -12,225 +12,383 @@ body {
     height: 100vh;
 }
 
-.head {
+.header {
     background: #fff;
-    height: 55px;
+    height: 3.438rem;
     
     display: flex;
     align-items: center;
 
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.head img {
-    width: 145.81px;
-    margin-left: 41px;
+.header img {
+    width: 9.125rem;
+    margin-left: 2.563rem;
 }
-.principal {
+#principal {
     display: flex;
-    max-width: calc(100vw - 138px);
+    width: 100%;
+    max-width: 75rem;
     margin: auto;
+    max-height: calc(100vh - 3.438rem);
 }
 
 .firstPage {
-    width: 894px;
-    height: 622px;
+    width: 55.875em;
+    height: 38.875em;
 }
 
-.endomarketing {
-    margin: 30px auto 8px;
+.firstPage .endomarketing {
+    margin: 1.875em auto 0.5em;
     display: flex;
     justify-content: space-between;
 }
 
-.endomarketing .letter {
-    font: 300 35px 'open sans', sans-serif;
+.firstPage .endomarketing .letter {
+    font: 300 2.188em 'open sans', sans-serif;
 }
 
-.propertyInside {
+.firstPage .endomarketing .propertyInside {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    width: 208px;
+    width: 13rem;
     
 }
 
-select {
-    width: 95px;
-    height: 38px;
-    border-radius: 4px;
+.firstPage .endomarketing .propertyInside select {
+    width: 5.938rem;
+    height: 2.375rem;
+    border-radius: 0.25rem;
     text-transform: uppercase;
+    border: 1px solid #B4B4B4;
 }
 
-.buttonDetail {
-    width: 103px;
-    height: 38px;
+.firstPage .endomarketing .propertyInside .buttonCreat {
+    width: 6.438rem;
+    height: 2.375rem;
 
-    border-radius: 4px;
+    border-radius: 0.25rem;
     border: none;
     background: #3489B1;
     color: #fff;
     font-weight: 700;
+    transition: 800ms;
 
 }
 
-.buttonDetail, select {
+.firstPage .endomarketing .propertyInside .buttonCreat:hover {
+    background: #125e81;
+}
+
+.firstPage .endomarketing .propertyInside .buttonCreat, select {
     cursor: pointer;
 }
 
-
-li {
-    background: #fff;
-    list-style: none;
-    width: 894px;
-    height: 93px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.activity .list + .list {
+    margin-top: 0.625rem;
 }
 
-li + li {
-    margin-top: 10px;
-}
-
-li .leftSide {
-    display: flex;
-    flex-direction: row;
-}
-
-li .leftSide img {
-    width: 73px;
-    height: 73px;
-}
-
-.card {
-    width: 279px;
-    height: 309px;
-    margin: 35px auto 17px 31px;
-    background-color: #FFF2DE;
-    border: 1px solid #DCD1C0;
-    padding: 28px 21px;
-}
-.card p {
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.card button {
-    width: 113px;
-    height: 38px;
-    border: 1px solid #707070;
-    border-radius: 4px;
-    text-transform: uppercase;
-    font: 700 13px 'open sans', sans-serif;
-    background: none;
-    margin-top: 16px;
-    margin-bottom: 30px;
-}
-.cardManage {
-    width: 279px;
-    height: 333px;
-    margin: 17px auto 19px 31px;
-    background: #fff;
-    border-radius: 5px;
-    padding: 10px 8px;
-    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.demo {
-    width: 262.08px;
-    height: 86.39px;
-    background: rgba(52, 137, 177, 0.1);
-}
-.demo + .demo {
-    margin-top: 6.4px;
-}
-
-.list + .list {
-    margin-top: 10px;
-}
-
-.list {
+.activity .list {
     display: grid;
-    grid-template-columns: 700px 70px;
+    grid-template-columns: 43.75rem 4.375rem;
     margin: auto;
     justify-content: space-between;
 
-    max-width: 894px;
-    height: 93px;
+    max-width: 55.875rem;
+    height: 5.813rem;
 
     background: #fff;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.19);
 
     color: #707070;
 }
-.leftProperty {
+.activity .list .leftProperty {
     display: flex;
     align-items: center;
     justify-content: center;
 } 
-.leftProperty img {
-    width: 73px;
-    height: 73px;
-    margin: 0 10px;
+.activity .leftProperty img {
+    width: 4.563rem;
+    height: 4.563rem;
+    margin: 0 0.625rem;
 }
-.title {
-    font: 700 16px/100% 'open sans', sans-serif;
+.activity .leftProperty .title {
+    font: 700 1em 'open sans', sans-serif;
 }
-.Smalltext {
+.list .leftProperty .Smalltext {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    font: 300 9px/100% 'open sans', sans-serif;
-    margin: 3px 0 4px 0;
-    border-right: 1px solid #707070;
-    width: 102px;
+    font: 300 0.563em 'open sans', sans-serif;
+    margin: 0.188rem 0 0.25rem 0;
+    width: 300px;
+    justify-content: space-between;
 }
 
-.comunicado p:first-child {
-    background: #3489B1;
-    font: 700 6px 'open sans', sans-serif;
-    color: #fff;
-    padding: 2px;
-    margin-right: 5px;
-}
-.publication p:first-child {
-    background: #707070;
-    font: 700 6px 'open sans', sans-serif;
-    color: #fff;
-    padding: 2px;
-    margin-right: 5px;
-}
-.event p:first-child {
-    background: #EE8686;
-    font: 700 6px 'open sans', sans-serif;
-    color: #000;
-    padding: 2px;
-    margin-right: 5px;
-}
-.longtext {
-    font: 300 13px/100% 'open sans', sans-serif;
-    /* white-space: nowrap; */
-    overflow: hidden;
-    text-overflow: clip ellipsis;
-    text-overflow: "..." "...";
-    line-height: 1.5;
-    height: 40px;
-
-}
-.button {
+.list .text .comunicado, .text .publication {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    text-transform: uppercase;
+    font: 300 0.563em 'open sans', sans-serif;
+    margin: 0.188rem 0 0.25rem 0;
+    width: 100px;
+    justify-content: space-between;
 }
 
-.button .roundedbutton {
-    width: 25px;
-    height: 25px;
+.list .text .comunicado p:first-child {
+    background: #3489B1;
+    font: 700 0.375em 'open sans', sans-serif;
+    color: #fff;
+    padding: 0.125rem;
+    margin-right: 0.313rem;
+    
+}
+
+.list .text .publication p:first-child {
+    background: #707070;
+    font: 700 0.375em 'open sans', sans-serif;
+    color: #fff;
+    padding: 0.125rem;
+    margin-right: 0.313rem;
+
+}
+.list .text .Smalltext .event {
+    display: flex;
+    align-items: center;
+}
+.list .text .Smalltext .event p:first-child {
+    background: #EE8686;
+    font: 700 0.375rem 'open sans', sans-serif;
+    color: #000;
+    padding: 0.125rem;
+    margin-right: 0.313rem;
+}
+
+.list .Smalltext p:nth-child(2) {
+    border-right: 1px solid #707070;
+    padding-right: 4px;
+}
+
+.list .leftProperty .longtext {
+    font: 300 13px/100% 'open sans', sans-serif;
+    overflow: hidden;
+    text-overflow: clip ellipsis;
+    line-height: 1.5;
+    height: 2.5rem;
+
+}
+.list .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.list .button .more1 {
+    width: 1.563rem;
+    height: 1.563rem;
     margin: 0 10px;
 
-    text-align: center;
     border: none;
-    border-radius: 25px;
+    border-radius: 1.563rem;
+    transition: 800ms;
+}
+
+.list .button .more1:hover {
+    background: #302b2b;
+}
+
+/*Aside: lado direito em tela cheia*/
+
+#secondPage .card {
+    width: 17.438rem;
+    height: 19.313rem;
+    margin: 2.188em auto 1.063em 1.938em;
+    background-color: #FFF2DE;
+    border: 1px solid #DCD1C0;
+    padding: 1.75em 1.313em;
+}
+#secondPage .card p {
+    font-size: 0.875em;
+    margin-top: 0.625rem;
+}
+
+#secondPage .card button {
+    width: 7.063em;
+    height: 2.375em;
+    border: 1px solid #707070;
+    border-radius: 0.25em;
+    text-transform: uppercase;
+    font: 700 0.813rem 'open sans', sans-serif;
+    background: none;
+    margin-top: 1rem;
+    margin-bottom: 1.875rem;
+    transition: 800ms;
+}
+
+#secondPage .card button:hover {
+    background: #bebebc;
+}
+#secondPage .cardManage {
+    width: 17.438rem;
+    height: 20.813rem;
+    margin: 1.063rem auto 1.188rem 1.938rem;
+    background: #fff;
+    border-radius: 0.313rem;
+    padding: 0.625rem 0.5rem;
+    box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.2), 0 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+}
+
+#secondPage .imgRect {
+    background: rgba(52, 137, 177, 0.1);
+    margin: 12px auto;
+}
+
+#secondPage .demo {
+    width: 16.375em;
+    height: 5.375em;
+}
+#secondPage .demo + .demo {
+    margin-top: 0.406rem;
+}
+
+#secondPage .demonstration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0.5rem;
+}
+
+#secondPage .icon {
+    display: flex;
+    width: 2.188rem;
+    justify-content: space-between;
+}
+
+#secondPage .globeIcon, .more {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#secondPage .globeIcon img {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+#secondPage .demoImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#secondPage .demoImg img {
+    width: 4.063rem;
+    height: 4.063rem;
+    transition: 800ms;
+}
+
+#secondPage .demoImg img:hover {
+    background: #125e81;
+}
+
+@media (max-width: 60em) {
+    body {
+        display: grid;
+        grid-template-rows: 3.438rem auto;
+    }
+    #principal {
+        display: grid;
+        grid-template-rows: auto auto;
+
+        width: 100%;
+        height: 100%;
+    }
+    .firstPage {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .firstPage .list .leftProperty .letter {
+        font-size: 1vw;
+    }
+    #secondPage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center center;
+
+        height: 279px;
+
+        margin-top: 1em;
+    }
+
+    #secondPage .card, #secondPage .cardManage {
+        width: 90%;
+        height: 80%;
+        margin: auto;
+    }
+    #secondPage .cardManage {
+        overflow: scroll;
+    }
+
+    .demo {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 45em) {
+    body {
+        display: grid;
+        grid-template-rows: 3.438rem auto;
+    }
+    #principal {
+        display: grid;
+        grid-template-rows: auto auto;
+
+        width: 100%;
+        height: 100%;
+    }
+    .firstPage {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .firstPage .list .leftProperty .letter {
+        font-size: 1vw;
+    }
+    #secondPage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center center;
+
+        height: 279px;
+        width: 100%;
+
+        margin-top: 1em;
+    }
+
+    #secondPage .card, #secondPage .cardManage {
+        width: 90%;
+        height: 80%;
+        margin: auto;
+    }
+    #secondPage .cardManage {
+        overflow: scroll;
+    }
+    .demo {
+        width: 100%;
+    }
+
 }
